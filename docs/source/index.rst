@@ -36,7 +36,7 @@ loc
     i18n.loc('hello', 'fr')
     i18n.loc('welcome %(name)s', 'se', {'name': 'hobbestigrou'})
 
-Translated to the requested language, if such a translation exists, otherwise no traslation occurs.
+Translated to the requested language, if such a translation exists, otherwise no translation occurs.
 
 .. code-block:: python
 
