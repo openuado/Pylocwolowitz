@@ -6,7 +6,7 @@ from pylocwolowitz import Pylocwolowitz
 class TestSequenceFunctions(unittest.TestCase):
 
     def setUp(self):
-        self.i18n = Pylocwolowitz('./i18n')
+        self.i18n = Pylocwolowitz('./i18n',format='yaml')
 
     def test_sample(self):
         self.assertEqual(self.i18n.loc('hello', 'es'), 'Hola')
