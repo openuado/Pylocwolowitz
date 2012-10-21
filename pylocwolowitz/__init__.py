@@ -27,7 +27,7 @@ class Pylocwolowitz(object):
     def loc(self, key, lang, values = None):
         '''Return the string key, translated to the requested language (if such a translation exists, otherwise no traslation occurs). Any other parameters passed to the method are injected to the placeholders in the string (if present).'''
 
-        if self.locales[key].get(lang) == None:
+        if self.locales[key].get(lang) is None:
             return key
 
         ret = key in self.locales and self.locales[key][lang] or key
