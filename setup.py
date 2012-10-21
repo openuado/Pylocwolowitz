@@ -7,7 +7,7 @@ setup(
     description = "Simple localization for web apps with JSON.",
     author = "Natal Ngetal",
     author_email = "hobbestigrou@erakis.im",
-    url = "",
+    url = "http://pylocwolowitz.readthedocs.org/en/latest/",
     download_url = "",
     keywords = ["i18n", "json"],
     classifiers = [
