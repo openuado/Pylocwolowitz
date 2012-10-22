@@ -12,7 +12,7 @@ class Pylocwolowitz(object):
         self._make_loc()
 
     def _make_loc(self):
-        listing = glob.glob(self.path + '/*.json')
+        listing = glob.glob(os.path.join(self.path, '*.json'))
         for infile in listing:
             with open(infile) as f:
                 data = json.load(f)
