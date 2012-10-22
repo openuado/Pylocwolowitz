@@ -22,13 +22,13 @@ class Pylocwolowitz(object):
 
     def _make_loc(self, infile):
         '''Store content of the file in a memory'''
+        lang = os.path.basename(infile).split('.')[0]
         with open(infile) as fil:
             data = json.load(fil)
         for key, value in data.items():
             if isinstance(value, dict):
                 self.locales[key].update(value)
             else:
-                lang = os.path.basename(infile).split('.')[0]
                 self.locales[key].update({lang: value})
 
     def loc(self, key, lang, values=None):
