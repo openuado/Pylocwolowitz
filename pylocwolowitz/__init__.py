@@ -7,8 +7,8 @@ from collections import defaultdict
 class Pylocwolowitz(object):
 
     def __init__(self, path):
-        self.path     = path
-        self.locales  = defaultdict(dict)
+        self.path = path
+        self.locales = defaultdict(dict)
         self._make_loc()
 
     def _find_file(self):
@@ -27,8 +27,11 @@ class Pylocwolowitz(object):
                 self.locales[key].update({lang: value})
         return
 
-    def loc(self, key, lang, values = None):
-        '''Return the string key, translated to the requested language (if such a translation exists, otherwise no traslation occurs). Any other parameters passed to the method are injected to the placeholders in the string (if present).'''
+    def loc(self, key, lang, values=None):
+        '''Return the string key, translated to the requested language (if such
+        a translation exists, otherwise no traslation occurs). Any other
+        parameters passed to the method are injected to the placeholders in the
+        string (if present).'''
 
         if self.locales[key].get(lang) is None:
             return key
