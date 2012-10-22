@@ -19,12 +19,12 @@ class Pylocwolowitz(object):
     def _make_loc(self, infile):
         with open(infile) as f:
             data = json.load(f)
-            for key, value in data.items():
-                if isinstance(value, dict):
-                    self.locales[key].update(value)
-                else:
-                    lang = os.path.basename(infile).split('.')[0]
-                    self.locales[key].update({lang: value})
+        for key, value in data.items():
+            if isinstance(value, dict):
+                self.locales[key].update(value)
+            else:
+                lang = os.path.basename(infile).split('.')[0]
+                self.locales[key].update({lang: value})
         return
 
     def loc(self, key, lang, values = None):
