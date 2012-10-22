@@ -42,6 +42,6 @@ class Pylocwolowitz(object):
 
         ret = self.locales[key][lang] if key in self.locales else key
         if values is None:
-            values = {}
-
-        return ret % values
+            return ret
+        else:
+            return ret % values
