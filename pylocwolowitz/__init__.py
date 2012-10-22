@@ -11,17 +11,20 @@ class Pylocwolowitz(object):
         self.locales  = defaultdict(dict)
         self._make_loc()
 
-    def _make_loc(self):
+    def _find_file(self):
         listing = glob.glob(os.path.join(self.path, '*.json'))
         for infile in listing:
-            with open(infile) as f:
-                data = json.load(f)
-                for key, value in data.items():
-                    if isinstance(value, dict):
-                        self.locales[key].update(value)
-                    else:
-                        lang = os.path.basename(infile).split('.')[0]
-                        self.locales[key].update({lang: value})
+            self._make_loc(infile)
+
+    def _make_loc(self, infile):
+        with open(infile) as f:
+            data = json.load(f)
+            for key, value in data.items():
+                if isinstance(value, dict):
+                    self.locales[key].update(value)
+                else:
+                    lang = os.path.basename(infile).split('.')[0]
+                    self.locales[key].update({lang: value})
         return
 
     def loc(self, key, lang, values = None):
