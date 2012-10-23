@@ -17,9 +17,12 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_sample_token(self):
         '''Tests with placeholders'''
-        self.assertEqual(self.i18n.loc('welcome %(name)s', 'fr', {'name': 'hobbestigrou'}), 'Bienvenue hobbestigrou')
-        self.assertEqual(self.i18n.loc('welcome %(name)s', 'en', {'name': 'hobbestigrou'}), 'Welcome hobbestigrou')
-        self.assertEqual(self.i18n.loc('welcome %(name)s', 'se', {'name': 'hobbestigrou'}), u'Välkommen hobbestigrou')
+        self.assertEqual(self.i18n.loc('welcome %(name)s', 'fr', {'name':
+            'hobbestigrou'}), 'Bienvenue hobbestigrou')
+        self.assertEqual(self.i18n.loc('welcome %(name)s', 'en', {'name':
+            'hobbestigrou'}), 'Welcome hobbestigrou')
+        self.assertEqual(self.i18n.loc('welcome %(name)s', 'se', {'name':
+            'hobbestigrou'}), u'Välkommen hobbestigrou')
 
     def test_no_key(self):
         '''Test to try with a non existing key'''
