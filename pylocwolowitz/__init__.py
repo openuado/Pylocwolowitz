@@ -4,6 +4,7 @@ import re
 import os.path
 from collections import defaultdict
 
+
 class Pylocwolowitz(object):
     '''Pylocwolitz  is a very imple text localization system, meant to be used
     by web applications (but can pretty much be used anywhere). Yes, another
