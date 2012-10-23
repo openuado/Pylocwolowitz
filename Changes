@@ -1,0 +1,14 @@
+Revision history for Pylocwolowitz.
+
+0.2 2012-10-24 00:50:40 Europe/Paris
+
+    Improve the code.
+    Add unicode tests.
+    Refactoring and Optimize the code.
+    Be compliant pep8.
+    Add docstring for all classes methods.
+    Fix MANIFEST.in.
+
+0.1 2012-10-21 21:35:21 Europe/Paris
+
+    First release.
