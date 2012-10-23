@@ -27,6 +27,6 @@ Simple localization
 
 Pylocwolowitz is a very simple text localization system, meant to be used by web applications (but can pretty much be used anywhere). Yes, another localization system.
 
-This version requires Python 3 or later.
+This version requires Python 2.7 or later.
 """
 )
