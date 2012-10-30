@@ -1,0 +1,4 @@
+---
+"welcome %(name)s":
+  fr: "Bienvenue %(name)s"
+  en: "Welcome %(name)s"
