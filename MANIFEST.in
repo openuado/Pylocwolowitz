@@ -1,5 +1,6 @@
 include pylocwolowitz/*.py
 include tests/*.py
 include tests/i18n/*.json
+incluce tests/i18n/*.yaml
 include README
 include Changes
