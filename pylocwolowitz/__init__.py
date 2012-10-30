@@ -9,6 +9,10 @@ class Pylocwolowitz(object):
     localization system.'''
 
     def __init__(self, path, format_deserializer='json'):
+
+        if format_deserializer not in ('json', 'yaml'):
+            raise ValueError('FormatNotSupported')
+
         self.path = path
         self.format_deserializer = format_deserializer
         self.locales = defaultdict(dict)
