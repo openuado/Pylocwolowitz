@@ -61,3 +61,9 @@ Translated to the requested language, if such a translation exists, otherwise no
            (Str): Language to translate
            (Dict): Arguments are injected to the placeholders in the string
     output: (Str): Translated to the requested language
+
+ACKNOWLEDGEMENTS
+================
+Thanks to Ido Perlmuter to Locale::Wolowitz. Thanks you to **Julien Tayon** for
+his contributions. A big thank you to **Haypo**, **Marmotte** and **Ggreg** for
+their invaluable advice.
