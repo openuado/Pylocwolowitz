@@ -3,6 +3,7 @@ import re
 import os.path
 from collections import defaultdict
 
+
 class Pylocwolowitz(object):
     '''Pylocwolitz is a very simple text localization system, meant to be used
     by web applications (but can pretty much be used anywhere). Yes, another
@@ -20,7 +21,8 @@ class Pylocwolowitz(object):
 
     def _find_file(self):
         '''Find all json files'''
-        listing = glob.glob(os.path.join(self.path, '*.' + self.format_deserializer))
+        listing = glob.glob(
+            os.path.join(self.path, '*.' + self.format_deserializer))
         for infile in listing:
             self._make_loc(infile)
 
