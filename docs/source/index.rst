@@ -15,6 +15,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   exemple_i18n_file
+
 Indices and tables
 ==================
 
