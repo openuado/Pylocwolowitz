@@ -67,5 +67,5 @@ Translated to the requested language, if such a translation exists, otherwise no
 ACKNOWLEDGEMENTS
 ================
 Thanks to Ido Perlmuter to Locale::Wolowitz. Thanks you to **Julien Tayon** for
-his contributions. A big thank you to **Haypo**, **Marmotte** and **Ggreg** for
+his contributions. A big thank you to **Victor Stinner**, **Marmotte** and **Ggreg** for
 their invaluable advice.
