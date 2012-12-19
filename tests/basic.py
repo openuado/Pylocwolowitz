@@ -1,15 +1,21 @@
+'''Simple basic test for YAML'''
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import unittest
 from pylocwolowitz import Pylocwolowitz
+import yaml
+import os
+
 
 class TestSequenceFunctions(unittest.TestCase):
     '''Basic test class with simple test'''
 
     def setUp(self):
         '''To set up thing we need, init a Pylocwolowitz'''
-        self.i18n = Pylocwolowitz('./i18n')
+        directory = os.getcwd() + '/i18n' if 'tests' in os.getcwd(
+        ) else os.getcwd() + '/tests/i18n'
+        self.i18n = Pylocwolowitz(directory)
 
     def test_sample(self):
         '''Simple test no placeholders'''
@@ -17,12 +23,15 @@ class TestSequenceFunctions(unittest.TestCase):
 
     def test_sample_token(self):
         '''Tests with placeholders'''
-        self.assertEqual(self.i18n.loc('welcome %(name)s', 'fr', {'name':
-            'hobbestigrou'}), 'Bienvenue hobbestigrou')
-        self.assertEqual(self.i18n.loc('welcome %(name)s', 'en', {'name':
-            'hobbestigrou'}), 'Welcome hobbestigrou')
-        self.assertEqual(self.i18n.loc('welcome %(name)s', 'se', {'name':
-            'hobbestigrou'}), u'Välkommen hobbestigrou')
+        self.assertEqual(self.i18n.loc('welcome %(name)s', 'fr',
+                                       {'name': 'hobbestigrou'}),
+                         'Bienvenue hobbestigrou')
+        self.assertEqual(self.i18n.loc('welcome %(name)s', 'en',
+                                       {'name': 'hobbestigrou'}),
+                         'Welcome hobbestigrou')
+        self.assertEqual(self.i18n.loc('welcome %(name)s', 'se',
+                                       {'name': 'hobbestigrou'}),
+                         u'Välkommen hobbestigrou')
 
     def test_no_key(self):
         '''Test to try with a non existing key'''
