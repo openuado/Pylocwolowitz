@@ -1,10 +1,9 @@
-'''Simple basic test for YAML'''
+'''Simple basic test for JSON'''
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 import unittest
 from pylocwolowitz import Pylocwolowitz
-import yaml
 import os
 
 
