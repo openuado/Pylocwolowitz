@@ -1,4 +1,4 @@
-'''Simple basic test to JSON'''
+'''Simple basic test to YAML'''
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
