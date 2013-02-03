@@ -1,6 +1,6 @@
-'''Simple basic test for JSON'''
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+'''Simple basic test for JSON'''
 
 import unittest
 from pylocwolowitz import Pylocwolowitz

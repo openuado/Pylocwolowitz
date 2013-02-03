@@ -1,6 +1,6 @@
-'''Simple basic test to YAML'''
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+'''Simple basic test to YAML'''
 
 import unittest
 from pylocwolowitz import Pylocwolowitz
