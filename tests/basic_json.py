@@ -7,7 +7,7 @@ from pylocwolowitz import Pylocwolowitz
 import os
 
 
-class TestSequenceFunctions(unittest.TestCase):
+class PylocwolowitzTestCase(unittest.TestCase):
     '''Basic test class with simple test'''
 
     def setUp(self):
@@ -39,7 +39,3 @@ class TestSequenceFunctions(unittest.TestCase):
     def test_no_lang(self):
         '''Test with a no lang'''
         self.assertEqual(self.i18n.loc('hello', 'lu'), 'hello')
-
-if __name__ == '__main__':
-    suite = unittest.TestLoader().loadTestsFromTestCase(TestSequenceFunctions)
-    unittest.TextTestRunner(verbosity=2).run(suite)
