@@ -1,4 +1,4 @@
-Exemple of i18n file
+Example of i18n file
 ====================
 
 Store files in the language folder first argument specified when creating the object.

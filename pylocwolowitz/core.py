@@ -5,9 +5,16 @@ from collections import defaultdict
 
 
 class Pylocwolowitz(object):
-    '''Pylocwolitz is a very simple text localization system, meant to be used
+    '''
+    Pylocwolitz is a very simple text localization system, meant to be used
     by web applications (but can pretty much be used anywhere). Yes, another
-    localization system.'''
+    localization system.
+
+    :param path: File path translation
+    :type path: str
+    :param format_deserializer: Indicate the serializer to use json or yaml
+    :type format_deserializer: str
+    '''
 
     def __init__(self, path, format_deserializer='json'):
 
@@ -44,10 +51,21 @@ class Pylocwolowitz(object):
                 self.locales[key].update({lang: value})
 
     def loc(self, key, lang, values=None):
-        '''Return the string key, translated to the requested language (if such
-        a translation exists, otherwise no traslation occurs). Any other
+        '''
+        Return the string key, translated to the requested language (if such a
+        translation exists, otherwise no traslation occurs). Any other
         parameters passed to the method are injected to the placeholders in the
-        string (if present).'''
+        string (if present).
+
+        :param key: Key translate
+        :type key: str
+        :param lang: Language to translate
+        :type lang: str
+        :param values: Arguments are injected to the placeholders in the string
+        :type values: dict
+        :returns: Translated to the requested language
+        :rtype: str
+        '''
 
         if self.locales[key].get(lang) is None:
             return key

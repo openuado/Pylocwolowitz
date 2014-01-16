@@ -1,6 +1,6 @@
-include pylocwolowitz/*.py
-include tests/*.py
-include tests/i18n/*.json
-incluce tests/i18n/*.yaml
-include README
-include Changes
+recursive-include pylocwolowitz *
+recursive-include tests *
+recursive-include docs *
+include README.md Changes
+global-exclude *.pyc
+global-exclude *.pyo
