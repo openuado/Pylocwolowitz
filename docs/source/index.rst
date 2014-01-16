@@ -17,6 +17,7 @@ Contents:
 
    api
    example_i18n_file
+   devguide
 
 Indices and tables
 ==================
