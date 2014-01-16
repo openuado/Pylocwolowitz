@@ -11,7 +11,7 @@ install:
 script: nosetests --nologcapture --all-modules tests
 notifications:
   irc:
-    - "irc.freenode.org#hobbestigrou"
+    - "irc.freenode.org#Hobbestigrou"
   on_success: change
   on_failure: always
   template:
