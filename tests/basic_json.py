@@ -2,8 +2,11 @@
 # -*- coding: utf-8 -*-
 '''Simple basic test for JSON'''
 
+from __future__ import unicode_literals
 import unittest
+
 from pylocwolowitz import Pylocwolowitz
+
 import os
 
 
@@ -28,9 +31,11 @@ class PylocwolowitzTestCase(unittest.TestCase):
         self.assertEqual(self.i18n.loc('welcome %(name)s', 'en',
                                        {'name': 'hobbestigrou'}),
                          'Welcome hobbestigrou')
+
         self.assertEqual(self.i18n.loc('welcome %(name)s', 'se',
                                        {'name': 'hobbestigrou'}),
-                         u'Välkommen hobbestigrou')
+                         'Välkommen hobbestigrou')
+
 
     def test_no_key(self):
         '''Test to try with a non existing key'''
