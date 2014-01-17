@@ -1,1 +1,1 @@
-from core import Pylocwolowitz
+from .core import Pylocwolowitz
