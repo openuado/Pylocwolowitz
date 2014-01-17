@@ -1,5 +1,11 @@
 Revision history for Pylocwolowitz.
 
+0.5 2014-01-17 01:15::40 Europe/Paris
+
+    Improve documentation use autodoc from sphinx.
+    Add a contributing file.
+    Be Python3 compatible.
+
 0.4 2013-08-08 00:20::40 Europe/Paris
 
     Improve and refactore tests.
