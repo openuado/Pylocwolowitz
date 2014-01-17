@@ -1,6 +1,6 @@
 recursive-include pylocwolowitz *
 recursive-include tests *
 recursive-include docs *
-include README.md Changes
+include README.rst CHANGELOG CONTRIBUTING.rst
 global-exclude *.pyc
 global-exclude *.pyo
