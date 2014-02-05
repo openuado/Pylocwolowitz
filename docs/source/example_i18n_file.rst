@@ -11,7 +11,7 @@ Here is an example with one language per file:
 .. code-block:: yaml
 
     ---
-    "welcome %(name)s": "Välkommen %(name)s"
+    "welcome {name}": "Välkommen {name}"
     "Hello": "Hej"
 
 An example with two language in the same file:
@@ -19,9 +19,9 @@ An example with two language in the same file:
 .. code-block:: yaml
 
     ---
-    "welcome %(name)s":
-      "fr": "Bienvenue %(name)s"
-      "en": "Welcome %(name)s"
+    "welcome {name}":
+      "fr": "Bienvenue {name}"
+      "en": "Welcome {name}"
 
 Use JSON format
 ---------------
@@ -31,7 +31,7 @@ Here is an example with one language per file:
 .. code-block:: json
 
     {
-        "welcome %(name)s": "Välkommen %(name)s"
+        "welcome {name}": "Välkommen {name}"
         "Hello": "Hej"
     }
 
@@ -42,8 +42,8 @@ An example with two language in the same file:
 .. code-block:: json
 
    {
-       "welcome %(name)s": {
-           "fr": "Bienvenue %(name)s",
-           "en": "Welcome %(name)s"
+       "welcome {name}": {
+           "fr": "Bienvenue {name}",
+           "en": "Welcome {name}"
        }
    }

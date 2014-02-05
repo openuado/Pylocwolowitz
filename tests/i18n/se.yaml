@@ -1,2 +1,2 @@
 ---
-"welcome %(name)s": "Välkommen %(name)s"
+"welcome {name}": "Välkommen {name}"
