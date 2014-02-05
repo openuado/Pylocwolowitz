@@ -3,14 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-* source: https://github.com/hobbestigrou/Pylocwolowitz
-* ticketing: https://github.com/hobbestigrou/Pylocwolowitz/issues
-* documentation: http://pylocwolowitz.readthedocs.org/en/latest/
-
 Welcome to Pylocwolowitz's documentation!
 =========================================
 
 Contents:
+
+* source: https://github.com/hobbestigrou/Pylocwolowitz
+* ticketing: https://github.com/hobbestigrou/Pylocwolowitz/issues
+* documentation: http://pylocwolowitz.readthedocs.org/en/latest/
+
 
 .. toctree::
    :maxdepth: 2
