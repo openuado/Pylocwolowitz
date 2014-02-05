@@ -1,5 +1,5 @@
+'''Pylocwolitz is a very simple text localization system.'''
 import glob
-import re
 import os.path
 from collections import defaultdict
 
