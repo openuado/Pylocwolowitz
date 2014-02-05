@@ -30,5 +30,5 @@ Example:
     from pylocwolowitz import Pylocwolowitz
     i18n = Pylocwolowitz('./i18n')
     i18n.loc('hello', 'fr')
-    i18n.loc('welcome %(name)s', 'se', {'name': 'hobbestigrou'})
+    i18n.loc('welcome {name}', 'se', {'name': 'hobbestigrou'})
 

@@ -74,4 +74,4 @@ class Pylocwolowitz(object):
         if values is None:
             return ret
         else:
-            return ret % values
+            return ret.format(**values)
