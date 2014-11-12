@@ -16,6 +16,7 @@ class Pylocwolowitz(object):
     :type path: str
     :param format_deserializer: Indicate the serializer to use json or yaml
     :type format_deserializer: str
+    :raises ValueError: Format not supported, only json or yaml.
     """
 
     def __init__(self, path, format_deserializer='json'):
