@@ -1,14 +1,12 @@
 language: python
-python:
-  - "2.6"
-  - "2.7"
-  - "3.2"
-  - "pypy"
-
 install:
-  - "pip install . --use-mirrors"
-  - "pip install -r requirements.txt --use-mirrors"
-script: nosetests --nologcapture --all-modules tests
+    pip install tox
+env:
+    matrix:
+        - TOXENV=py27
+        - TOXENV=py33
+        - TOXENV=flake8
+script: make test
 notifications:
   irc:
     - "irc.freenode.org#Hobbestigrou"
