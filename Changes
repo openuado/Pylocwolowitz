@@ -6,8 +6,10 @@ Revision history for Pylocwolowitz.
 0.8 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Migrate to pytest.
+- Add format test.
+- Improve documentation.
+- Use tox.
 
 0.7 (2014-02-06)
 ----------------
