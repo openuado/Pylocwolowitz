@@ -3,7 +3,7 @@ Changelog
 Revision history for Pylocwolowitz.
 
 
-0.8 (unreleased)
+0.8 (2017-04-19)
 ----------------
 
 - Migrate to pytest.
