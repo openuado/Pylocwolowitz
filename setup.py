@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name="pylocwolowitz",
     packages=["pylocwolowitz"],
-    version='0.8',
+    version='0.9.dev0',
     description="Simple localization for web apps with JSON.",
     author="Natal Ngetal",
     author_email="hobbestigrou@erakis.im",
