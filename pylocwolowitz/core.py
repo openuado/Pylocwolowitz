@@ -16,16 +16,19 @@ class Pylocwolowitz(object):
     :type path: str
     :param format_deserializer: Indicate the serializer to use json or yaml
     :type format_deserializer: str
+    :param default_key: Specify a default key if the key is not found
+    :type default_key: str
     :raises ValueError: Format not supported, only json or yaml.
     """
 
-    def __init__(self, path, format_deserializer='json'):
+    def __init__(self, path, format_deserializer='json', default_key=None):
         """To init the locolization system."""
         if format_deserializer not in ('json', 'yaml'):
             raise ValueError('FormatNotSupported')
 
         self.path = path
         self.format_deserializer = format_deserializer
+        self.default_key = default_key
         self.locales = defaultdict(dict)
         self._find_file()
 
@@ -73,10 +76,12 @@ class Pylocwolowitz(object):
         :returns: Translated to the requested language
         :rtype: str
         """
-        if self.locales[key].get(lang) is None:
-            return key
+        if key in self.locales:
+            ret = self.locales[key].get(lang, key)
+        else:
+            ret = self.locales[self.default_key].get(lang, key) \
+                if self.default_key else key
 
-        ret = self.locales[key][lang] if key in self.locales else key
         if values is None:
             return ret
         else:
