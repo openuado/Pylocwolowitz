@@ -4,7 +4,7 @@ install:
 env:
     matrix:
         - TOXENV=py27
-        - TOXENV=py33
+        - TOXENV=py36
         - TOXENV=flake8
 script: make test
 notifications:
