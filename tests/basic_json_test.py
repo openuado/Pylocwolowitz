@@ -1,24 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-'''Simple basic test for JSON'''
-
+"""Simple basic test for JSON"""
 from __future__ import unicode_literals
-
-import pytest
-
-from pylocwolowitz import Pylocwolowitz
-
-import os
-
-
-@pytest.fixture
-def pylocwolowitz():
-    """To load the pylocwolowitz object"""
-    directory = os.getcwd() + '/i18n' if 'tests' in os.getcwd(
-    ) else os.getcwd() + '/tests/i18n'
-    i18n = Pylocwolowitz(directory)
-
-    return i18n
 
 
 def test_sample(pylocwolowitz):
