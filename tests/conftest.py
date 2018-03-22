@@ -19,16 +19,17 @@ def pylocwolowitz_yaml():
 
 @pytest.fixture
 def pylocwolowitz_default_key():
-    """docstring for pylocwolwitz_default_key"""
+    """To load the pylocwolowitz object for yaml with default key"""
     return Pylocwolowitz(_get_directory(), 'yaml', default_key='default')
 
 
 @pytest.fixture
 def pylocwolowitz_json():
+    """To load the pylocwolowitz object for json"""
     return Pylocwolowitz(_get_directory(), 'json')
 
 
 @pytest.fixture
 def pylocwolowitz_default_key_json():
-    """docstring for pylocwolwitz_default_key"""
+    """To load the pylocwolowitz object for json with default key"""
     return Pylocwolowitz(_get_directory(), 'json', default_key='default')
