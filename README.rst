@@ -17,8 +17,7 @@ want to use the two-letter ISO 639-1 code).  A file with multiple language can
 be call fr_and_es.json. The basic idea is to write your application in a base
 language, and use the JSON files to translate text to other languages. For
 example, lets say you're writing your application in English and translating it
-to Hebrew, Spanish, and Dutch. You put Spanish and Dutch translations in one
-file, and since everybody hates Israel, you put Hebrew translations alone.
+to Spanish and Dutch.
 
 .. _`Locale::Wolowitz`: https://metacpan.org/module/Locale::Wolowitz
 
